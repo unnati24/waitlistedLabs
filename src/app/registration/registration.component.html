@@ -1,0 +1,38 @@
+<div class="container">
+    <span class="fixed-spacer"></span>
+
+    <mat-card class="register-card">
+        <mat-card-header>
+            <mat-card-title>JOIN THE WAITLIST</mat-card-title>
+            <mat-card-subtitle>Get on the list today and become one of the earliest users of this product
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form (ngSubmit)="!registerForm.invalid && saveChanges(registerForm)" #registerForm="ngForm">
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="text" name="name" [(ngModel)]="name" placeholder="Full Name"
+                        required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="email" name="email" [(ngModel)]="email"
+                        placeholder="Email Address" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="password" name="password" [(ngModel)]="password"
+                        placeholder="Password" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="text" name="referral" [(ngModel)]="referral"
+                        placeholder="Referral Code">
+                </fieldset>
+
+                <button class="btn btn-primary" type="submit">JOIN</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+</div>

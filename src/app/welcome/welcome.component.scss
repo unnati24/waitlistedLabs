@@ -1,0 +1,198 @@
+.container {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/images/welcome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 768px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: burlywood;
+    letter-spacing: 3px;
+
+    h1 {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 3vw;
+        font-weight: 300;
+        margin-bottom: 4%;
+    }
+
+    h2 {
+        font-family: 'Pacifico', cursive;
+        font-size: 4vw;
+        font-weight: 300;
+    }
+
+    h3 {
+        margin-top: 3.5%;
+        font-family: 'Special Elite', cursive;
+        font-size: 1.3vw;
+    }
+}
+
+.cards {
+    margin: 5px 0 5px 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    box-shadow: none;
+    border: none;
+
+    mat-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(167, 167, 167);
+        width: 200px;
+        padding: 0;
+        margin: 3px
+    }
+}
+
+mat-card {
+    h1 {
+        padding: 0;
+        font-family: 'Amatic SC', cursive;
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 4vw;
+        font-weight: 600;
+        padding: 0;
+    }
+}
+
+.referral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.8% 0 1% 35%;
+
+    p:nth-child(1) {
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 2vw;
+        letter-spacing: 4px;
+        font-weight: 300;
+        color: burlywood;
+    }
+
+    p:nth-child(2) {
+        font-family: 'Special Elite', cursive;
+        font-size: 2vw;
+        letter-spacing: 4px;
+        font-weight: 300;
+        color: burlywood;
+    }
+}
+
+
+#logout-btn {
+    padding: 8px 16px;
+    float: right;
+    margin: 2% 5% 0 85%;
+    box-shadow: none;
+    font-size: 20px;
+    background-color: transparent;
+    border-color: rgba(248, 248, 255, 0.904);
+    border-radius: 3%;
+    border-width: medium;
+    color: rgba(248, 248, 255, 0.904);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+button:hover {
+    opacity: 0.9;
+    color: rgba(248, 248, 255, 0.904);
+    transform: scale(0.96);
+}
+
+@media only screen and (min-width: 601px) {
+    .mat-card {
+        padding: 0;
+    }
+
+    mat-card-header {
+        font-size: 2.5vw;
+    }
+
+    mat-card-content {
+        font-size: 3.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        text-align: center;
+        padding: 10% 25% 0 0%;
+
+    }
+
+    .cards>mat-card {
+        margin: 0px 10px 0 0;
+        padding: 0;
+
+
+    }
+
+    mat-card>h1 {
+        font-size: 3.5vw;
+        width: 100px;
+        font-weight: 700;
+        padding: 0
+    }
+
+    .header {
+
+        h1 {
+            padding: 3px 0;
+            font-size: 5vw;
+        }
+
+        h2 {
+            padding: 3px 0;
+            font-size: 6vw;
+        }
+
+        h3 {
+            padding: 3px 0;
+            font-size: 3vw;
+        }
+    }
+
+    .referral {
+        p:nth-child(1) {
+            font-size: 4vw;
+            color: burlywood;
+            font-weight: 700;
+
+        }
+
+        p:nth-child(2) {
+            font-size: 4vw;
+            color: midnightblue;
+            font-weight: 900;
+            background-color: burlywood;
+
+        }
+    }
+}

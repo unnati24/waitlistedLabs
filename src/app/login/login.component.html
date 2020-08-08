@@ -1,0 +1,27 @@
+<div class="container">
+    <span class="fixed-spacer"></span>
+
+    <mat-card class="register-card">
+        <mat-card-header>
+            <mat-card-title>We appreciate you reaching here!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form (ngSubmit)="!registerForm.invalid && saveChanges(registerForm)" #registerForm="ngForm">
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="email" name="email" [(ngModel)]="email"
+                        placeholder="Email Address" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input class="form-control" type="password" name="password" [(ngModel)]="password"
+                        placeholder="Password" required>
+                </fieldset>
+
+                <button class="btn btn-primary" type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    <span class="fixed-spacer"></span>
+
+</div>

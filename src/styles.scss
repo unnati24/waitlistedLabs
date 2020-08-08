@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import'../node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css';
+@import '../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css';
+@import '../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css';
+@import '../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Special+Elite&family=Amatic+SC:wght@700&family=Pacifico&family=Dosis:wght@600&family=Raleway&family=Chelsea+Market&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+}

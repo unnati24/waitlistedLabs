@@ -1,0 +1,25 @@
+<div class="container">
+    <button id="logout-btn" class="btn" (click)="logout()">Logout</button>
+    <div class="header">
+        <h1>Hello, {{user}}!</h1>
+        <h2>You're on the waitlist.</h2>
+        <h3>Improve your position by referring friends!</h3>
+    </div>
+
+    <mat-card class="cards">
+        <mat-card>
+            <h1>YOUR POSITION</h1>
+            <h3>{{position}}</h3>
+        </mat-card>
+        <mat-card>
+            <h1>TOTAL IN-LINE</h1>
+            <h3>{{size}}</h3>
+        </mat-card>
+    </mat-card>
+
+    <div class="referral">
+        <p>Your referral code</p>
+        <p>{{referralCode}}</p>
+    </div>
+
+</div>
